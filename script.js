@@ -185,10 +185,12 @@ function* floodFill(ctx, w, h, x, y) {
 }
 
 let imgd = ctx.getImageData(0, 0, cw, ch);
+//TODO: get the shapes from the url
 generateImage(3, 5);
 let floodFillFrames = floodFill(ctx, cw, ch, Math.round(randomX()), Math.round(randomY()));
 
 function start() {
+    //TODO: get the shapes from the url
     generateImage(3, 5);
     imgd = ctx.getImageData(0, 0, cw, ch);
     floodFillFrames = floodFill(ctx, cw, ch, Math.round(randomX()), Math.round(randomY()));
